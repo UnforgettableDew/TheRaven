@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: theraven
+    environment:
+      POSTGRES_USER: unforgettable
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: customer-management
+    ports:
+      - "5432:5432"
+    restart: unless-stopped

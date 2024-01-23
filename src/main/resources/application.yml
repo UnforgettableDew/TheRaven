@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: 'unforgettable'
+    password: '123456'
+    url: jdbc:postgresql://localhost:5432/customer-management
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/customer-management
+    user: 'unforgettable'
+    password: '123456'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
